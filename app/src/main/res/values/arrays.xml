@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="course_types">
+        <item>计算机</item>
+        <item>经济管理</item>
+        <item>心理学</item>
+        <item>外语</item>
+        <item>音乐与艺术</item>
+        <item>文史哲法</item>
+        <item>医学与保健</item>
+        <item>理学工学农学</item>
+        <item>考研</item>
+        <item>教育教学</item>
+    </string-array>
+</resources>

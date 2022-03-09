@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".TeacherCoursesActivity">
 
         <RelativeLayout
             android:id="@+id/r1"
@@ -34,7 +34,7 @@
             </LinearLayout>
 
             <RelativeLayout
-                android:id="@+id/current_book"
+                android:id="@+id/label_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
@@ -55,10 +55,10 @@
             </RelativeLayout>
 
             <ScrollView
-                android:id="@+id/scroll_books"
+                android:id="@+id/scroll_lessons"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@+id/current_book">
+                android:layout_below="@+id/label_1">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -102,7 +102,7 @@
 
         </RelativeLayout>
         <Button
-            android:id="@+id/button_know"
+            android:id="@+id/button_publish"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
