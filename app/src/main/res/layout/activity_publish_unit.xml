@@ -150,9 +150,9 @@
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recycler_test"
-                    android:layout_below="@+id/add_test"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_below="@+id/add_test"
                     android:layout_marginLeft="8dp"
                     android:layout_marginRight="8dp"
                     android:overScrollMode="never" />

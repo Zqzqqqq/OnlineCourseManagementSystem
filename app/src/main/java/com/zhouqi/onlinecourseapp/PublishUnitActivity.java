@@ -2,6 +2,7 @@ package com.zhouqi.onlinecourseapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.Dialog;
@@ -25,15 +26,20 @@ import java.util.List;
 
 public class PublishUnitActivity extends AppCompatActivity implements View.OnClickListener {
 
+
     TextView confirm;
     ImageButton addTest;
     private GridImageAdapter textAdapter;
     private GridImageAdapter videoAdapter;
     private final List<LocalMedia> textData = new ArrayList<>();
     private final List<LocalMedia> videoData = new ArrayList<>();
-    RecyclerView TextRecyclerView;
-    RecyclerView VideoRecyclerView;
+    RecyclerView textRecyclerView;
+    RecyclerView videoRecyclerView;
+    RecyclerView topicRecyclerView;
     Dialog inputTest;
+    TopicsAdapter topicsAdapter;
+    List<String> tests;
+    private int count = 1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,22 +49,29 @@ public class PublishUnitActivity extends AppCompatActivity implements View.OnCli
         confirm.setOnClickListener(this);
         addTest.setOnClickListener(this);
 
+        tests = new ArrayList<>();
 
-        TextRecyclerView = findViewById(R.id.recycler_text);
+        topicsAdapter = new TopicsAdapter(tests);
+        topicRecyclerView = findViewById(R.id.recycler_test);
+        LinearLayoutManager layoutManager=new LinearLayoutManager(this);
+        topicRecyclerView.setLayoutManager(layoutManager);
+        topicRecyclerView.setAdapter(topicsAdapter);
+
+        textRecyclerView = findViewById(R.id.recycler_text);
         FullyGridLayoutManager manager = new FullyGridLayoutManager(this,
                 4, GridLayoutManager.VERTICAL, false);
-        TextRecyclerView.setLayoutManager(manager);
+        textRecyclerView.setLayoutManager(manager);
         textAdapter = new GridImageAdapter(this, textData);
         textAdapter.setSelectMax(1);
-        TextRecyclerView.setAdapter(textAdapter);
+        textRecyclerView.setAdapter(textAdapter);
 
-        VideoRecyclerView = findViewById(R.id.recycler_video);
+        videoRecyclerView = findViewById(R.id.recycler_video);
         FullyGridLayoutManager manager1 = new FullyGridLayoutManager(this,
                 4, GridLayoutManager.VERTICAL, false);
-        VideoRecyclerView.setLayoutManager(manager1);
+        videoRecyclerView.setLayoutManager(manager1);
         videoAdapter = new GridImageAdapter(this, videoData);
         videoAdapter.setSelectMax(1);
-        VideoRecyclerView.setAdapter(videoAdapter);
+        videoRecyclerView.setAdapter(videoAdapter);
 
         textAdapter.setOnItemClickListener(new GridImageAdapter.OnItemClickListener() {
             @Override
@@ -125,6 +138,13 @@ public class PublishUnitActivity extends AppCompatActivity implements View.OnCli
             case R.id.add_test:
                 inputTest = new TestInputDialog(this,0,this);
                 inputTest.show();
+                break;
+            case R.id.btn_save:
+                inputTest.cancel();
+                topicsAdapter.addItem("题目"+count);
+                topicRecyclerView.setAdapter(topicsAdapter);
+                count++;
+                break;
         }
     }
 

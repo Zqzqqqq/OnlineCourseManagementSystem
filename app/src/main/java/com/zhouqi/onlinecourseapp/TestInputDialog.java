@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.Spinner;
 
 import androidx.annotation.NonNull;
@@ -24,9 +25,8 @@ public class TestInputDialog extends Dialog {
     private View multiSelectLayout;
     private View blankLayout;
     private View subjectiveLayout;
-
     private View.OnClickListener mClickListener;
-
+    private Button save;
     public TestInputDialog(Activity context) {
         super(context);
         this.context = context;
@@ -43,7 +43,7 @@ public class TestInputDialog extends Dialog {
         super.onCreate(savedInstanceState);
         // 指定布局
         this.setContentView(R.layout.dialog_test_input);
-
+        save = findViewById(R.id.btn_save);
         testTypeSpinner = findViewById(R.id.spinner_test_type);
         judgeLayout = findViewById(R.id.judge);
         singleSelectLayout = findViewById(R.id.select_single);
@@ -51,6 +51,7 @@ public class TestInputDialog extends Dialog {
         blankLayout = findViewById(R.id.blank);
         subjectiveLayout = findViewById(R.id.subjective);
 
+        save.setOnClickListener(mClickListener);
         testTypeSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
@@ -80,20 +81,13 @@ public class TestInputDialog extends Dialog {
             }
         });
 
-        /*
-         * 获取圣诞框的窗口对象及参数对象以修改对话框的布局设置, 可以直接调用getWindow(),表示获得这个Activity的Window
-         * 对象,这样这可以以同样的方式改变这个Activity的属性.
-         */
         Window dialogWindow = this.getWindow();
-
         WindowManager m = context.getWindowManager();
         Display d = m.getDefaultDisplay(); // 获取屏幕宽、高用
         WindowManager.LayoutParams p = dialogWindow.getAttributes(); // 获取对话框当前的参数值
         p.height = (int) (d.getHeight() * 0.6); // 高度设置为屏幕的0.6
         p.width = (int) (d.getWidth() * 0.8); // 宽度设置为屏幕的0.8
         dialogWindow.setAttributes(p);
-
-
 
         this.setCancelable(true);
     }
