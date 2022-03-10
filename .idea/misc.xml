@@ -8,14 +8,25 @@
         <entry key="..\:/AndroidProject/OnlineCourseApp/app/src/main/res/drawable/button_publish_new_course.xml" value="0.26979166666666665" />
         <entry key="..\:/AndroidProject/OnlineCourseApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.26979166666666665" />
         <entry key="..\:/AndroidProject/OnlineCourseApp/app/src/main/res/drawable/textview_press2.xml" value="0.26979166666666665" />
+        <entry key="..\:/AndroidProject/OnlineCourseApp/app/src/main/res/layout/activity_course_publish.xml" value="0.25364583333333335" />
         <entry key="..\:/AndroidProject/OnlineCourseApp/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/AndroidProject/OnlineCourseApp/app/src/main/res/layout/activity_publish.xml" value="0.264" />
         <entry key="..\:/AndroidProject/OnlineCourseApp/app/src/main/res/layout/activity_publish2.xml" value="0.25364583333333335" />
+        <entry key="..\:/AndroidProject/OnlineCourseApp/app/src/main/res/layout/activity_publish_unit.xml" value="0.2390625" />
         <entry key="..\:/AndroidProject/OnlineCourseApp/app/src/main/res/layout/activity_unit_publish.xml" value="0.25364583333333335" />
+        <entry key="..\:/AndroidProject/OnlineCourseApp/app/src/main/res/layout/dialog_test_input.xml" value="0.25364583333333335" />
+        <entry key="..\:/AndroidProject/OnlineCourseApp/app/src/main/res/layout/fragment_courses_teacher.xml" value="0.25364583333333335" />
         <entry key="..\:/AndroidProject/OnlineCourseApp/app/src/main/res/layout/fragment_teacher.xml" value="0.264" />
+        <entry key="..\:/AndroidProject/OnlineCourseApp/app/src/main/res/layout/gv_filter_image.xml" value="0.25364583333333335" />
         <entry key="..\:/AndroidProject/OnlineCourseApp/app/src/main/res/layout/items_course_teacher.xml" value="0.25364583333333335" />
         <entry key="..\:/AndroidProject/OnlineCourseApp/app/src/main/res/layout/layout_bar_bottom1.xml" value="0.25364583333333335" />
         <entry key="..\:/AndroidProject/OnlineCourseApp/app/src/main/res/layout/layout_bar_top1.xml" value="0.25364583333333335" />
+        <entry key="..\:/AndroidProject/OnlineCourseApp/app/src/main/res/layout/layout_test_blank.xml" value="0.25364583333333335" />
+        <entry key="..\:/AndroidProject/OnlineCourseApp/app/src/main/res/layout/layout_test_judge.xml" value="0.25364583333333335" />
+        <entry key="..\:/AndroidProject/OnlineCourseApp/app/src/main/res/layout/layout_test_select.xml" value="0.25364583333333335" />
+        <entry key="..\:/AndroidProject/OnlineCourseApp/app/src/main/res/layout/layout_test_select_multi.xml" value="0.25364583333333335" />
+        <entry key="..\:/AndroidProject/OnlineCourseApp/app/src/main/res/layout/layout_test_select_single.xml" value="0.25364583333333335" />
+        <entry key="..\:/AndroidProject/OnlineCourseApp/app/src/main/res/layout/layout_test_subjective.xml" value="0.25364583333333335" />
         <entry key="..\:/AndroidProject/OnlineCourseApp/app/src/main/res/layout/recycler_view_item.xml" value="0.13994565217391305" />
         <entry key="..\:/AndroidProject/OnlineCourseApp/app/src/main/res/layout/recycler_view_item_1.xml" value="0.13994565217391305" />
       </map>

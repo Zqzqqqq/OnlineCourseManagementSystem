@@ -9,7 +9,7 @@ public class TeacherCoursesActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_courses_teacher);
+        setContentView(R.layout.fragment_teacher);
     }
 
 

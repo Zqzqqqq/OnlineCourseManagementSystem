@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="问题内容"
+        style="@style/text_course_info"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/input_box_style">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/test_name"
+            style="@style/edit_text_style"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:text="问题答案"
+        style="@style/text_course_info"
+        />
+
+    <RadioGroup
+        android:id="@+id/radio_group_judge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingVertical="8dp">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="对"
+            android:textSize="20sp"
+            android:paddingLeft="5dp"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="错"
+            android:textSize="20sp"
+            android:paddingLeft="5dp"/>
+    </RadioGroup>
+</LinearLayout>

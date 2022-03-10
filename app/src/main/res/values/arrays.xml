@@ -12,4 +12,12 @@
         <item>考研</item>
         <item>教育教学</item>
     </string-array>
+
+    <string-array name="test_types">
+        <item>判断题</item>
+        <item>单选题</item>
+        <item>多选题</item>
+        <item>填空题</item>
+        <item>主观题</item>
+    </string-array>
 </resources>
