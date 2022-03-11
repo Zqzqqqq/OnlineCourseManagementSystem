@@ -7,6 +7,7 @@ import android.app.DatePickerDialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.DatePicker;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import java.text.DateFormat;
@@ -21,6 +22,8 @@ public class PublishCourseActivity extends AppCompatActivity implements View.OnC
     TextView courseEndTime;
     DateFormat format= DateFormat.getDateTimeInstance();
     Calendar calendar= Calendar.getInstance(Locale.CHINA);
+    ImageButton back;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,10 +32,12 @@ public class PublishCourseActivity extends AppCompatActivity implements View.OnC
         chooseEndTime = findViewById(R.id.course_time_choose_end);
         courseStartTime = findViewById(R.id.course_time_start);
         courseEndTime = findViewById(R.id.course_time_end);
+        back = findViewById(R.id.btn_back);
         chooseStartTime.setOnClickListener(this);
         chooseEndTime.setOnClickListener(this);
         courseStartTime.setOnClickListener(this);
         courseEndTime.setOnClickListener(this);
+        back.setOnClickListener(this);
     }
 
     /**
@@ -73,6 +78,8 @@ public class PublishCourseActivity extends AppCompatActivity implements View.OnC
             case R.id.course_time_end:
                 showDatePickerDialog(this,  0, chooseStartTime, calendar);;
                 break;
+            case R.id.btn_back:
+                finish();
             default:
                 break;
         }
