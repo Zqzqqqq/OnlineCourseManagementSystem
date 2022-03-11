@@ -24,7 +24,7 @@ public class PublishCourseActivity extends AppCompatActivity implements View.OnC
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_course_publish);
+        setContentView(R.layout.activity_publish_course);
         chooseStartTime = findViewById(R.id.course_time_choose_start);
         chooseEndTime = findViewById(R.id.course_time_choose_end);
         courseStartTime = findViewById(R.id.course_time_start);

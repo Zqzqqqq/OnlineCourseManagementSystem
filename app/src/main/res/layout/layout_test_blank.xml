@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="问题前半部分"
+        style="@style/text_course_info"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/input_box_style">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/test_before"
+            style="@style/edit_text_style"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:text="问题后半部分"
+        style="@style/text_course_info"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/input_box_style">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/test_after"
+            style="@style/edit_text_style"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:text="问题答案"
+        style="@style/text_course_info"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/input_box_style">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/test_answer"
+            style="@style/edit_text_style"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TeacherCoursesActivity">
+
+    <LinearLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DCDCDC">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/title_publish_unit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="发布新单元" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_properties"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_course_info"
+                android:text="单元名称" />
+
+            <LinearLayout
+                style="@style/input_box_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/unit_name"
+                    style="@style/edit_text_style" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/text_course_info"
+                android:text="单元简介" />
+
+            <LinearLayout
+                style="@style/input_box_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/unit_introduction"
+                    style="@style/edit_text_style" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/label_text"
+                    style="@style/text_course_info"
+                    android:text="单元教案" />
+
+                <!--<ImageButton
+                    android:id="@+id/add_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="#F6F6F6"
+                    android:src="@drawable/add" />-->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/label_text"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:overScrollMode="never" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/label_video"
+                    style="@style/text_course_info"
+                    android:text="课程视频" />
+
+                <!--<ImageButton
+                    android:id="@+id/add_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="#F6F6F6"
+                    android:src="@drawable/add" />-->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/label_video"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:overScrollMode="never" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    style="@style/text_course_info"
+                    android:text="单元习题" />
+
+                <ImageButton
+                    android:id="@+id/add_test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="#F6F6F6"
+                    android:src="@drawable/ic_add_test" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_test"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/add_test"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:overScrollMode="never" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/text_clean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/textview_press2"
+            android:clickable="true"
+            android:paddingVertical="10dp"
+            android:paddingLeft="20sp"
+            android:text="清空"
+            android:gravity="center"
+            android:textColor="#3CB371"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/text_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@drawable/textview_press2"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingVertical="10dp"
+            android:text="确定"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</RelativeLayout>

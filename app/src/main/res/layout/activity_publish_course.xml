@@ -18,7 +18,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/back"
+                android:src="@drawable/ic_back"
                  />
 
             <TextView
@@ -144,6 +144,22 @@
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/course_books"
+                        style="@style/edit_text_style"
+                        android:maxLines="2"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:text="课程最大容量"
+                    style="@style/text_course_info"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/input_box_style">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/course_capacity"
                         style="@style/edit_text_style"
                         android:maxLines="2"
                         />

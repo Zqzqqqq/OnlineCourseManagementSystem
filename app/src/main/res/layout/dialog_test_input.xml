@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/label_test_type"
+        android:text="题目类型"
+        style="@style/text_course_info"
+        />
+    <Spinner
+        android:id="@+id/spinner_test_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_test_type"
+        android:paddingLeft="8dp"
+        android:theme="@style/spinner_style"
+        android:entries="@array/test_types"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/spinner_test_type"
+        android:layout_above="@+id/btn_save">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/layout_test_judge"
+                android:id="@+id/judge"
+                android:visibility="gone"/>
+            <include layout="@layout/layout_test_select_single"
+                android:id="@+id/select_single"
+                android:visibility="gone"/>
+            <include layout="@layout/layout_test_select_multi"
+                android:id="@+id/select_multi"
+                android:visibility="gone"/>
+            <include layout="@layout/layout_test_blank"
+                android:id="@+id/blank"
+                android:visibility="gone"/>
+            <include layout="@layout/layout_test_subjective"
+                android:id="@+id/subjective"
+                android:visibility="gone"/>
+        </FrameLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="保存"
+        android:textSize="20sp"/>
+
+</RelativeLayout>
