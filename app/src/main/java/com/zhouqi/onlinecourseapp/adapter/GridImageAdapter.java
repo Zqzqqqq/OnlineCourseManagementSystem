@@ -1,4 +1,4 @@
-package com.zhouqi.onlinecourseapp;
+package com.zhouqi.onlinecourseapp.adapter;
 
 import android.content.Context;
 import android.net.Uri;
@@ -17,6 +17,7 @@ import com.luck.picture.lib.config.SelectMimeType;
 import com.luck.picture.lib.entity.LocalMedia;
 import com.luck.picture.lib.utils.DateUtils;
 import com.zhouqi.onlinecourseapp.OnItemLongClickListener;
+import com.zhouqi.onlinecourseapp.R;
 
 import java.io.File;
 import java.util.ArrayList;

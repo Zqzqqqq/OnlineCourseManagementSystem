@@ -20,6 +20,8 @@ import com.luck.picture.lib.entity.MediaExtraInfo;
 import com.luck.picture.lib.interfaces.OnExternalPreviewEventListener;
 import com.luck.picture.lib.interfaces.OnResultCallbackListener;
 import com.luck.picture.lib.utils.MediaUtils;
+import com.zhouqi.onlinecourseapp.adapter.GridImageAdapter;
+import com.zhouqi.onlinecourseapp.adapter.TopicsAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -145,6 +147,7 @@ public class PublishUnitActivity extends AppCompatActivity implements View.OnCli
                 topicRecyclerView.setAdapter(topicsAdapter);
                 count++;
                 break;
+
         }
     }
 
