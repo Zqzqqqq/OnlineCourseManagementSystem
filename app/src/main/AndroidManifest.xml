@@ -37,16 +37,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OnlineCourseApp">
         <activity
-            android:name=".PublishUnitActivity"
+            android:name=".ui.activity.PublishUnitActivity"
             android:exported="true" />
         <activity
-            android:name=".PublishCourseActivity"
+            android:name=".ui.activity.PublishCourseActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".TeacherCoursesActivity"
+            android:name=".ui.fragment.TeacherCoursesFragment"
             android:exported="true" />
-        <activity android:name=".Student.StuMainActivity"
+        <activity android:name=".ui.activity.StuMainActivity"
+            android:exported="true"/>
+
+        <activity android:name=".ui.activity.ClassActivity"
+            android:exported="true"/>
+
+        <activity android:name=".ui.activity.CourseContentActivity"
+            android:exported="true"/>
+
+        <activity android:name=".ui.activity.HomeActivity"
+            android:exported="true"/>
+
+        <activity android:name=".ui.activity.LoginActivity"
             android:exported="true"/>
     </application>
 

@@ -8,4 +8,11 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="app_color_f6">#f6f6f6</color>
+    <color name="hint_gray">#bcbcbc</color>
+    <color name="divider">#e8e7e7</color>
+    <color name="skin_text_white">#ffffff</color>
+    <color name="skin_topbar_bg_color">#344261</color>
+    <color name="grey_f3f3f3">#f3f3f3</color>
+    <color name="grey_7D7D7D">#7D7D7D</color>
+    <color name="green_006400">#006400</color>
 </resources>
