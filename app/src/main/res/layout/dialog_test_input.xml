@@ -21,27 +21,37 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/spinner_test_type"
-        android:layout_above="@+id/btn_save">
+        android:layout_above="@+id/btn_save"
+        android:layout_below="@id/spinner_test_type">
 
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <include layout="@layout/layout_test_judge"
+
+            <include
                 android:id="@+id/judge"
-                android:visibility="gone"/>
-            <include layout="@layout/layout_test_select_single"
+                layout="@layout/layout_test_judge"
+                android:visibility="gone" />
+
+            <include
                 android:id="@+id/select_single"
-                android:visibility="gone"/>
-            <include layout="@layout/layout_test_select_multi"
+                layout="@layout/layout_test_select_single"
+                android:visibility="gone" />
+
+            <include
                 android:id="@+id/select_multi"
-                android:visibility="gone"/>
-            <include layout="@layout/layout_test_blank"
+                layout="@layout/layout_test_select_multi"
+                android:visibility="gone" />
+
+            <include
                 android:id="@+id/blank"
-                android:visibility="gone"/>
-            <include layout="@layout/layout_test_subjective"
+                layout="@layout/layout_test_blank"
+                android:visibility="gone" />
+
+            <include
                 android:id="@+id/subjective"
-                android:visibility="gone"/>
+                layout="@layout/layout_test_subjective"
+                android:visibility="gone" />
         </FrameLayout>
     </ScrollView>
 

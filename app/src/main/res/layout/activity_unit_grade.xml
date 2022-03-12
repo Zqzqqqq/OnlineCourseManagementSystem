@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UnitGradeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DCDCDC">
+
+        <ImageButton
+            android:id="@+id/btn_unit_grade_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_back"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="单元测验打分" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="第一单元测验                             已完成"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="#dddddd"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="第二单元测验                             已完成"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="#dddddd"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="第三单元测验                             已完成"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="#dddddd"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/tv_unit4"
+        android:layout_height="50dp"
+        android:text="第四单元测验                             未完成"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="#dddddd"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:textColor="#eb1717"
+        android:textSize="20sp"/>
+
+</LinearLayout>

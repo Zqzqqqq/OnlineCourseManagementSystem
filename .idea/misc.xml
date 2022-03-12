@@ -34,6 +34,31 @@
         <entry key="..\:/AndroidProject/OnlineCourseApp/app/src/main/res/layout/layout_test_subjective.xml" value="0.25364583333333335" />
         <entry key="..\:/AndroidProject/OnlineCourseApp/app/src/main/res/layout/recycler_view_item.xml" value="0.13994565217391305" />
         <entry key="..\:/AndroidProject/OnlineCourseApp/app/src/main/res/layout/recycler_view_item_1.xml" value="0.13994565217391305" />
+        <entry key="..\:/Programming files/teachapp/app/src/main/res/layout/activity_end_course.xml" value="0.25885416666666666" />
+        <entry key="..\:/Programming files/teachapp/app/src/main/res/layout/activity_one_unit_grade.xml" value="0.25885416666666666" />
+        <entry key="..\:/Programming files/teachapp/app/src/main/res/layout/activity_publish_course.xml" value="0.25885416666666666" />
+        <entry key="..\:/Programming files/teachapp/app/src/main/res/layout/activity_publish_unit.xml" value="0.25885416666666666" />
+        <entry key="..\:/Programming files/teachapp/app/src/main/res/layout/activity_reminder.xml" value="0.25885416666666666" />
+        <entry key="..\:/Programming files/teachapp/app/src/main/res/layout/activity_stu_main.xml" value="0.25885416666666666" />
+        <entry key="..\:/Programming files/teachapp/app/src/main/res/layout/activity_unit_grade.xml" value="0.25885416666666666" />
+        <entry key="..\:/Programming files/teachapp/app/src/main/res/layout/dialog_test_input.xml" value="0.25885416666666666" />
+        <entry key="..\:/Programming files/teachapp/app/src/main/res/layout/fragment_grade.xml" value="0.25885416666666666" />
+        <entry key="..\:/Programming files/teachapp/app/src/main/res/layout/fragment_my_course.xml" value="0.25885416666666666" />
+        <entry key="..\:/Programming files/teachapp/app/src/main/res/layout/fragment_stu_course.xml" value="0.25885416666666666" />
+        <entry key="..\:/Programming files/teachapp/app/src/main/res/layout/fragment_teacher.xml" value="0.1328125" />
+        <entry key="..\:/Programming files/teachapp/app/src/main/res/layout/gv_filter_image.xml" value="0.1328125" />
+        <entry key="..\:/Programming files/teachapp/app/src/main/res/layout/item_topic.xml" value="0.25885416666666666" />
+        <entry key="..\:/Programming files/teachapp/app/src/main/res/layout/items_course_selected.xml" value="0.25885416666666666" />
+        <entry key="..\:/Programming files/teachapp/app/src/main/res/layout/items_course_stu.xml" value="0.25885416666666666" />
+        <entry key="..\:/Programming files/teachapp/app/src/main/res/layout/items_course_teacher.xml" value="0.1328125" />
+        <entry key="..\:/Programming files/teachapp/app/src/main/res/layout/items_student_grade.xml" value="0.2713541666666667" />
+        <entry key="..\:/Programming files/teachapp/app/src/main/res/layout/items_student_unit_grade.xml" value="0.2713541666666667" />
+        <entry key="..\:/Programming files/teachapp/app/src/main/res/layout/layout_test_blank.xml" value="0.25885416666666666" />
+        <entry key="..\:/Programming files/teachapp/app/src/main/res/layout/layout_test_judge.xml" value="0.1328125" />
+        <entry key="..\:/Programming files/teachapp/app/src/main/res/layout/layout_test_select_multi.xml" value="0.1109375" />
+        <entry key="..\:/Programming files/teachapp/app/src/main/res/layout/layout_test_select_single.xml" value="0.25885416666666666" />
+        <entry key="..\:/Programming files/teachapp/app/src/main/res/layout/subjective_question.xml" value="0.25885416666666666" />
+        <entry key="..\:/Programming files/teachapp/app/src/main/res/layout/subjetive_question.xml" value="0.25885416666666666" />
       </map>
     </option>
   </component>
