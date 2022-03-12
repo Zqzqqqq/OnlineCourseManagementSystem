@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey_f3f3f3"
+    tools:context=".ui.fragment.AssessmentFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="20dp">
+        <ImageView
+            android:id="@+id/icon_confortest"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/ic_confortest"/>
+        <TextView
+            android:id="@+id/assess_confortest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/icon_confortest"
+            android:layout_marginLeft="10dp"
+            android:text="考试大纲"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+        <ImageView
+            android:id="@+id/assess_goin"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_toRightOf="@+id/assess_confortest"
+            android:layout_marginLeft="220dp"
+            android:src="@mipmap/ic_goin" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/assess_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginLeft="5dp"
+        android:textSize="30dp"
+        android:text="测验与作业"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/assessment_list"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" />
+
+</LinearLayout>

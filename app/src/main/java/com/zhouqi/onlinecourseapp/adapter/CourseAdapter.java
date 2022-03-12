@@ -9,7 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.zhouqi.onlinecourseapp.Course;
+import com.zhouqi.onlinecourseapp.entity.Course;
 import com.zhouqi.onlinecourseapp.R;
 
 import java.util.List;

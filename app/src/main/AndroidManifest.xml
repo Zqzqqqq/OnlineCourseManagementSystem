@@ -13,6 +13,7 @@
     <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -21,10 +22,10 @@
 
     <queries package="${applicationId}">
         <intent>
-            <action android:name="android.media.action.IMAGE_CAPTURE" />
+            <action android:name="android.media.action.IMAGE_CAPTURE"></action>
         </intent>
         <intent>
-            <action android:name="android.media.action.ACTION_VIDEO_CAPTURE" />
+            <action android:name="android.media.action.ACTION_VIDEO_CAPTURE"></action>
         </intent>
     </queries>
 
@@ -36,27 +37,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OnlineCourseApp">
         <activity
-            android:name=".OneUnitGradeActivity"
+            android:name=".ui.activity.PublishUnitActivity"
             android:exported="true" />
         <activity
-            android:name=".UnitGradeActivity"
-            android:exported="true" />
-        <activity
-            android:name=".EndCourseActivity"
-            android:exported="true" />
-        <activity
-            android:name=".PublishUnitActivity"
-            android:exported="true" />
-        <activity
-            android:name=".PublishCourseActivity"
+            android:name=".ui.activity.PublishCourseActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".TeacherCoursesActivity"
+            android:name=".ui.fragment.TeacherCoursesFragment"
             android:exported="true" />
-        <activity
-            android:name=".Student.StuMainActivity"
-            android:exported="true" />
+        <activity android:name=".ui.activity.StuMainActivity"
+            android:exported="true"/>
+
+        <activity android:name=".ui.activity.ClassActivity"
+            android:exported="true"/>
+
+        <activity android:name=".ui.activity.CourseContentActivity"
+            android:exported="true"/>
+
+        <activity android:name=".ui.activity.HomeActivity"
+            android:exported="true"/>
+
+        <activity android:name=".ui.activity.LoginActivity"
+            android:exported="true"/>
     </application>
 
 </manifest>
