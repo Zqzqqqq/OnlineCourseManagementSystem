@@ -43,9 +43,7 @@
             android:name=".ui.activity.PublishCourseActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".ui.fragment.TeacherCoursesFragment"
-            android:exported="true" />
+
         <activity android:name=".ui.activity.StuMainActivity"
             android:exported="true"/>
 

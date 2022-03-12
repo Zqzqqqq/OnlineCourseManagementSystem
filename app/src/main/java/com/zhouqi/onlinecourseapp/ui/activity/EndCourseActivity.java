@@ -1,7 +1,6 @@
-package com.zhouqi.onlinecourseapp;
+package com.zhouqi.onlinecourseapp.ui.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -9,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.zhouqi.onlinecourseapp.R;
+import com.zhouqi.onlinecourseapp.entity.StudentData;
 import com.zhouqi.onlinecourseapp.adapter.StudentDataGradeAdapter;
 
 import java.util.ArrayList;

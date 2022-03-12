@@ -21,7 +21,7 @@ import com.luck.picture.lib.interfaces.OnExternalPreviewEventListener;
 import com.luck.picture.lib.interfaces.OnResultCallbackListener;
 import com.luck.picture.lib.utils.MediaUtils;
 import com.zhouqi.onlinecourseapp.ui.control.FullyGridLayoutManager;
-import com.zhouqi.onlinecourseapp.GlideEngine;
+import com.zhouqi.onlinecourseapp.utils.GlideEngine;
 import com.zhouqi.onlinecourseapp.R;
 import com.zhouqi.onlinecourseapp.ui.dialog.TestInputDialog;
 import com.zhouqi.onlinecourseapp.adapter.GridImageAdapter;

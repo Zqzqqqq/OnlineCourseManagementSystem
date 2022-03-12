@@ -1,4 +1,4 @@
-package com.zhouqi.onlinecourseapp;
+package com.zhouqi.onlinecourseapp.ui.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -8,7 +8,9 @@ import android.app.Dialog;
 import android.os.Bundle;
 import android.view.View;
 
-import com.zhouqi.onlinecourseapp.adapter.StudentDataGradeAdapter;
+import com.zhouqi.onlinecourseapp.R;
+import com.zhouqi.onlinecourseapp.entity.StudentUnitGrade;
+import com.zhouqi.onlinecourseapp.ui.dialog.SubjectiveQuestionDialog;
 import com.zhouqi.onlinecourseapp.adapter.StudentUnitGradeAdapter;
 
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.zhouqi.onlinecourseapp;
+package com.zhouqi.onlinecourseapp.ui.dialog;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -8,6 +8,8 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.zhouqi.onlinecourseapp.R;
 
 public class SubjectiveQuestionDialog extends Dialog {
     Activity context;

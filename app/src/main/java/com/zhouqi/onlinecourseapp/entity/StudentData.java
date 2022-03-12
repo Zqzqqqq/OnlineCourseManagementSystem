@@ -1,4 +1,4 @@
-package com.zhouqi.onlinecourseapp;
+package com.zhouqi.onlinecourseapp.entity;
 
 public class StudentData {
     //记录学生的信息

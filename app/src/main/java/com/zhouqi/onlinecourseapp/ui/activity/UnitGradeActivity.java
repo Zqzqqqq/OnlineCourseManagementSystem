@@ -1,4 +1,4 @@
-package com.zhouqi.onlinecourseapp;
+package com.zhouqi.onlinecourseapp.ui.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+import com.zhouqi.onlinecourseapp.R;
 
 public class UnitGradeActivity extends AppCompatActivity {
 
@@ -20,7 +20,7 @@ public class UnitGradeActivity extends AppCompatActivity {
         tvUnit4Grade.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(UnitGradeActivity.this,OneUnitGradeActivity.class);
+                Intent intent = new Intent(UnitGradeActivity.this, OneUnitGradeActivity.class);
                 startActivity(intent);
             }
         });

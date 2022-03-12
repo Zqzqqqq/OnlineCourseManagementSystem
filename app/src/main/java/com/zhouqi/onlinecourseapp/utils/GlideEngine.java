@@ -1,4 +1,4 @@
-package com.zhouqi.onlinecourseapp;
+package com.zhouqi.onlinecourseapp.utils;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -16,6 +16,7 @@ import com.bumptech.glide.request.transition.Transition;
 import com.luck.picture.lib.engine.ImageEngine;
 import com.luck.picture.lib.interfaces.OnCallbackListener;
 import com.luck.picture.lib.utils.ActivityCompatHelper;
+import com.zhouqi.onlinecourseapp.R;
 
 public class GlideEngine implements ImageEngine {
 

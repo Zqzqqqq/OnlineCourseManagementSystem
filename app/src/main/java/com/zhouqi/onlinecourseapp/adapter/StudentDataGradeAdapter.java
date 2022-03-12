@@ -10,7 +10,7 @@ package com.zhouqi.onlinecourseapp.adapter;
         import androidx.recyclerview.widget.RecyclerView;
 
         import com.zhouqi.onlinecourseapp.R;
-        import com.zhouqi.onlinecourseapp.StudentData;
+        import com.zhouqi.onlinecourseapp.entity.StudentData;
 
         import java.util.List;
 
