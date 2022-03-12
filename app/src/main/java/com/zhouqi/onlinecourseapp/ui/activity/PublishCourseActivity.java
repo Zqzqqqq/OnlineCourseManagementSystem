@@ -72,13 +72,13 @@ public class PublishCourseActivity extends AppCompatActivity implements View.OnC
                 showDatePickerDialog(this,  0, chooseStartTime, calendar);;
                 break;
             case R.id.course_time_choose_end:
-                showDatePickerDialog(this,  0, chooseStartTime, calendar);;
+                showDatePickerDialog(this,  0, chooseEndTime, calendar);;
                 break;
             case R.id.course_time_start:
-                showDatePickerDialog(this,  0, chooseStartTime, calendar);;
+                showDatePickerDialog(this,  0, courseStartTime, calendar);;
                 break;
             case R.id.course_time_end:
-                showDatePickerDialog(this,  0, chooseStartTime, calendar);;
+                showDatePickerDialog(this,  0, courseEndTime, calendar);;
                 break;
             case R.id.btn_back:
                 finish();
