@@ -61,7 +61,7 @@ public class TeacherCoursesFragment extends BaseFragment implements View.OnClick
     @Override
     protected void initView() {
         initCourses();
-        courseAdapter = new CourseAdapter(courses);
+        courseAdapter = new CourseAdapter(getActivity(),courses);
         coursesRecyclerView = mRootView.findViewById(R.id.recyclerview_courses);
         publishNewCourse = mRootView.findViewById(R.id.button_publish);
         publishNewCourse.setOnClickListener(this);

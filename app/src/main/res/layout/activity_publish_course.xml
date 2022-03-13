@@ -67,7 +67,7 @@
                         />
                 </LinearLayout>
 
-                <TextView
+<!--                <TextView
                     android:text="课程类型"
                     style="@style/text_course_info"
                     />
@@ -84,7 +84,7 @@
                         android:theme="@style/spinner_style"
                         android:entries="@array/course_types"
                         />
-                </LinearLayout>
+                </LinearLayout>-->
 
                 <TextView
                     android:text="课程介绍"

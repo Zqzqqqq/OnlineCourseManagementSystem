@@ -43,9 +43,7 @@
             android:name=".ui.activity.PublishCourseActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustPan" />
-
-        <activity android:name=".ui.activity.StuMainActivity"
-            android:exported="true"/>
+        
 
         <activity android:name=".ui.activity.ClassActivity"
             android:exported="true"/>
@@ -57,6 +55,18 @@
             android:exported="true"/>
 
         <activity android:name=".ui.activity.LoginActivity"
+            android:exported="true"/>
+
+        <activity android:name=".ui.activity.EndCourseActivity"
+            android:exported="true"/>
+
+        <activity android:name=".ui.activity.UnitGradeActivity"
+            android:exported="true"/>
+
+        <activity android:name=".ui.activity.OneUnitGradeActivity"
+            android:exported="true"/>
+
+        <activity android:name=".ui.activity.ReminderActivity"
             android:exported="true"/>
     </application>
 

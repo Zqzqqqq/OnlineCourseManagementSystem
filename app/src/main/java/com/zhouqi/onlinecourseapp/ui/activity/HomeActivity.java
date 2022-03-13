@@ -13,6 +13,7 @@ import com.zhouqi.onlinecourseapp.ui.fragment.MyFragment;
 import com.zhouqi.onlinecourseapp.adapter.MyPagerAdapter;
 import com.zhouqi.onlinecourseapp.ui.fragment.NewsFragment;
 import com.zhouqi.onlinecourseapp.entity.TabEntity;
+import com.zhouqi.onlinecourseapp.ui.fragment.StuMainFragment;
 import com.zhouqi.onlinecourseapp.ui.fragment.TeacherCoursesFragment;
 
 import java.util.ArrayList;

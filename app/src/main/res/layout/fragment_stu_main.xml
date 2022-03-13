@@ -53,8 +53,9 @@
                 android:layout_weight="1"
                 android:layout_gravity="center"
                 android:scaleType="centerInside"
-                app:srcCompat="@drawable/reminder"
+                android:src="@drawable/reminder"
                 android:background="@color/white"
+                android:visibility="visible"
                 />
         </LinearLayout>
 

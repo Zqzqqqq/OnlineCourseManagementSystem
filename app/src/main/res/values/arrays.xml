@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="course_types">
-        <item>计算机</item>
-        <item>经济管理</item>
+        <item>项目初始</item>
+        <item>项目计划</item>
         <item>心理学</item>
         <item>外语</item>
         <item>音乐与艺术</item>

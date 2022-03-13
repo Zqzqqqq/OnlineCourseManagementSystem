@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 public class HomeFragment extends BaseFragment {
     private ArrayList<Fragment> mFragments = new ArrayList<>();
-    private String[] mTitles={"数学","英语","计算机","音乐与艺术","心理学"};
+    private String[] mTitles={"推荐","国家精品","精选微课","期末不挂","好课速递"};
     private ViewPager viewPager;
     private SlidingTabLayout slidingTabLayout;
 
